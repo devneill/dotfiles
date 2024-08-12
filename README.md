@@ -17,6 +17,10 @@ New computer setup guide and the related dotfiles
 3. Clone the dotfiles repo - `git clone git@github.com:devneill/dotfiles.git`
 4. Add the configs to their appropriate locations
 6. Install brew apps: `brew install fish font-fira-code font-fira-code-nerd-font`
+7. Install Fisher plugin manager `curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher`
+8. Install Fisher plugins
+  1. Easy directory jumping - `fisher install jethrokuan/z`
+  2. Hydro prompt - `fisher install jorgebucaran/hydro` & give it some color with `set --universal hydro_color_prompt magenta` & `set --universal hydro_color_git magenta`
 7. Set up nice git diffing like [cpojer](https://cpojer.net/posts/the-perfect-development-environment#bat-and-delta)
 	1. Make sure you have loaded the `.gitconfig` from this repo
 	2. `brew install bat git-delta`

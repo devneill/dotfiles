@@ -4,11 +4,10 @@ end
 
 # Aliases
 alias setfish="vim ~/.config/fish/config.fish"
-alias setfishv="vim ~/.config/fish/fish_variables"
-alias setzsh="vim ~/.zshrc"
 alias setvim="vim ~/.vimrc"
 alias setgit="vim ~/.gitconfig"
 
+# FE Aliases
 alias sb="yarn storybook"
 
 # Git Aliases
