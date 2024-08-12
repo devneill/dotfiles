@@ -1,5 +1,5 @@
 # dotfiles
-My new computer setup guide and the related dotfiles
+New computer setup guide and the related dotfiles
 
 # Basics
 
