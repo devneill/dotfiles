@@ -1,0 +1,61 @@
+[pull]
+	ff = only
+[push]
+	autoSetupRemote = true
+[core]
+	pager = delta --features "$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo dunkel-theme || echo licht-theme)"
+	ignorecase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential "https://github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
+  [interactive]
+    diffFilter = delta --color-only
+[add.interactive]
+    useBuiltin = false
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
+[delta "licht-theme"]
+  light = true
+  side-by-side = true
+  file-style = "bold #111111"
+  file-decoration-style = "#111111 ul"
+  grep-file-style = "bold #111111"
+  grep-line-number-style = "#adadad"
+  hunk-header-decoration-style = "#adadad ul ol"
+  hunk-header-line-number-style = "#111111"
+  line-numbers = true
+  line-numbers-left-style = "#adadad"
+  line-numbers-right-style = "#adadad"
+  line-numbers-zero-style = "#adadad"
+  navigate = true
+  syntax-theme = Licht
+  tabs = 2
+  map-styles = \
+   bold purple => syntax "#feecf7", \
+   bold blue => syntax "#e5dff6", \
+   bold cyan => syntax "#d8fdf6", \
+   bold yellow => syntax "#f4ffe0"
+[delta "dunkel-theme"]
+  light = false
+  side-by-side = true
+  file-style = "bold #c8c8c8"
+  file-decoration-style = "#c8c8c8 ul"
+  grep-file-style = "bold #c8c8c8"
+  grep-line-number-style = "#adadad"
+  hunk-header-decoration-style = "#adadad ul ol"
+  hunk-header-line-number-style = "#c8c8c8"
+  line-numbers = true
+  line-numbers-left-style = "#adadad"
+  line-numbers-right-style = "#adadad"
+  line-numbers-zero-style = "#adadad"
+  navigate = true
+  syntax-theme = Dunkel
+  tabs = 2

@@ -1,0 +1,51 @@
+{
+  // ---- Functional Changes ----
+  "shell": {
+    "program": "/opt/homebrew/bin/fish"
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4"
+    },
+    "version": "2"
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Atelier Cave Light",
+    "dark": "Summercamp"
+  },
+  "vim_mode": true,
+  "autosave": "on_focus_change",
+  "git": {
+    "inline_blame": { "enabled": false }
+  },
+
+  // ---- UI Changes ----
+  "cursor_blink": false,
+  "buffer_font_size": 12,
+  "ui_font_size": 14,
+  "ui_font_family": "FiraCode Nerd Font Mono",
+  "buffer_font_family": "FiraCode Nerd Font Mono",
+  // JetBrainsMono Nerd Font Mono / FiraCode Nerd Font Mono / Source Code Pro / Zed Mono
+  "project_panel": {
+    "button": false,
+    "dock": "right",
+    "indent_size": 12
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "terminal": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "notification_panel": {
+    "button": false
+  }
+}
