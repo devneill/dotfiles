@@ -17,14 +17,10 @@ My new computer setup guide and the related dotfiles
 3. Clone the dotfiles repo - `git clone git@github.com:devneill/dotfiles.git`
 4. Add the configs to their appropriate locations
 6. Install brew apps: `brew install fish font-fira-code font-fira-code-nerd-font`
-7. Set up nice git diffing
+7. Set up nice git diffing like [cpojer](https://cpojer.net/posts/the-perfect-development-environment#bat-and-delta)
 	1. Make sure you have loaded the .gitconfig from the dotfiles repo
 	2. `brew install bat git-delta`
-
-    ```other
-    mkdir -p "$(bat --config-dir)/themes"
-    cd "$(bat --config-dir)/themes"
-    ```
-
-	4. load themes into `.config/bat/themes` with `git clone [git@github.com](https://git@github.com):cpojer/licht-theme.git` & `git clone [git@github.com](https://git@github.com):cpojer/dunkel-theme.git`
+	3. `mkdir -p "$(bat --config-dir)/themes" && cd "$(bat --config-dir)/themes"`
+	4. load themes into `.config/bat/themes` with `git clone git@github.com:cpojer/licht-theme.git` & `git clone git@github.com:cpojer/dunkel-theme.git`
 	5. load themes with `bat cache --build`
+8. Add [Refined Github](https://github.com/refined-github/refined-github) to your browser
