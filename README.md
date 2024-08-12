@@ -6,6 +6,7 @@ New computer setup guide and the related dotfiles
 1. Set mouse speed to max
 2. Set text to small
 3. Make dock tiny
+4. Turn off spaces rearranging based on most recently used
 4. Customise Finder sidebar
 5. Install [Hombrew](https://brew.sh/)
 6. Install base apps with `brew install --cask zed figma arc raycast things craft fantastical superhuman slack discord bartender flux`
