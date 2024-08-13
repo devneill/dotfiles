@@ -31,7 +31,8 @@
   "project_panel": {
     "button": false,
     "dock": "right",
-    "indent_size": 12
+    "indent_size": 12,
+    "default_width": 300
   },
   "outline_panel": {
     "button": false
