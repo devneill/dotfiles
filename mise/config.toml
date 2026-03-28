@@ -1,0 +1,3 @@
+[settings]
+# Read .nvmrc, .node-version, .python-version etc.
+idiomatic_version_file = true
