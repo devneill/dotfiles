@@ -66,9 +66,6 @@ defaults write NSGlobalDomain AppleSpacesSwitchOnActivate -bool false
 echo "  ✅ Mission Control"
 
 # --- Trackpad ---
-# Enable tap to click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-
 # Tracking speed (0 to 3, default is about 1)
 defaults write NSGlobalDomain com.apple.trackpad.scaling -float 2.5
 echo "  ✅ Trackpad"
