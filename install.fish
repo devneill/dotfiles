@@ -10,8 +10,8 @@ ln -sf $DOTFILES/fish/config.fish ~/.config/fish/config.fish
 echo "  ✅ Fish"
 
 # Ghostty
-mkdir -p ~/.config/ghostty
-ln -sf $DOTFILES/ghostty/config ~/.config/ghostty/config
+mkdir -p ~/Library/Application\ Support/com.mitchellh.ghostty
+ln -sf $DOTFILES/ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
 echo "  ✅ Ghostty"
 
 # Git

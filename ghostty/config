@@ -12,6 +12,8 @@ macos-titlebar-style = tabs
 
 # Cursor
 cursor-style = bar
+cursor-style-blink = false
+adjust-cursor-thickness = 2
 
 # Shell integration
 shell-integration = fish
