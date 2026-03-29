@@ -1,0 +1,23 @@
+[
+  {
+    "context": "Workspace",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-shift-g": "git_panel::ToggleFocus",
+      "cmd-alt-x": [
+        "action::Sequence",
+        [
+          ["task::Spawn", { "task_name": "X-Ray | Dev" }],
+          ["task::Spawn", { "task_name": "X-Ray | Host | macOS" }]
+        ]
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-shift-g": "git_panel::ToggleFocus"
+    }
+  }
+]

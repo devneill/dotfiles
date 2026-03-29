@@ -1,35 +1,75 @@
-[core]
-	excludesfile = /Users/devneill/.gitignore_global
-	pager = delta
 [user]
 	name = Dev Neill
 	email = me@devneill.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIjh3c+RYz0V4o+A+Jdgz7AYZY5+5k3L6OKu11KIwQVL
+
+[core]
+	excludesfile = ~/.gitignore_global
+	pager = delta --features "$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo dark-theme || echo light-theme)"
+	ignorecase = false
+
 [init]
 	defaultBranch = main
+
 [diff]
 	algorithm = histogram
+	colorMoved = default
+
 [help]
 	autocorrect = prompt
+
 [pull]
 	rebase = true
+
 [push]
 	default = current
 	autoSetupRemote = true
+
 [merge]
 	conflictstyle = zdiff3
+
 [color]
 	ui = auto
+
 [gpg]
 	format = ssh
+
 [gpg "ssh"]
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
 [commit]
 	gpgsign = true
+
 [interactive]
 	diffFilter = delta --color-only
-[delta]
-	navigate = true
-	dark = true
-	line-numbers = true
+
+[add.interactive]
+	useBuiltin = false
+
+[delta "light-theme"]
+	light = true
 	side-by-side = true
+	line-numbers = true
+	navigate = true
+	syntax-theme = OneHalfLight
+	tabs = 2
+
+[delta "dark-theme"]
+	light = false
+	side-by-side = true
+	line-numbers = true
+	navigate = true
+	syntax-theme = OneHalfDark
+	tabs = 2
+
+[credential "https://github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

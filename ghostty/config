@@ -2,8 +2,8 @@
 font-family = GeistMono Nerd Font
 font-size = 14
 
-# Theme
-theme = catppuccin-mocha
+# Theme (auto light/dark to match Zed)
+theme = light:One Half Light,dark:One Half Dark
 
 # Window
 window-padding-x = 10
@@ -12,3 +12,6 @@ macos-titlebar-style = tabs
 
 # Cursor
 cursor-style = bar
+
+# Shell integration
+shell-integration = fish

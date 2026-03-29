@@ -33,6 +33,7 @@ echo "  ✅ SSH"
 # Zed
 mkdir -p ~/.config/zed
 ln -sf $DOTFILES/zed/settings.json ~/.config/zed/settings.json
+ln -sf $DOTFILES/zed/keymap.json ~/.config/zed/keymap.json
 echo "  ✅ Zed"
 
 echo ""
