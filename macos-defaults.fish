@@ -61,10 +61,6 @@ echo "  ✅ Screenshots"
 # Don't rearrange spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
-# Don't automatically switch to a space with open windows for the app
-defaults write NSGlobalDomain AppleSpacesSwitchOnActivate -bool false
-echo "  ✅ Mission Control"
-
 # --- Trackpad ---
 # Tracking speed (0 to 3, default is about 1)
 defaults write NSGlobalDomain com.apple.trackpad.scaling -float 2.5
