@@ -22,7 +22,7 @@ New machine setup guide and dotfiles.
 ### 2. Apps
 
 ```fish
-brew install --cask zed figma arc raycast things craft fantastical superhuman slack discord bartender flux cleanshot pixelsnap ghostty 1password
+brew install --cask zed figma raycast slack discord bartender cleanshot pixelsnap ghostty 1password
 ```
 
 ### 3. CLI Tools
@@ -100,6 +100,14 @@ mise use -g usage
 
 - Install [Refined GitHub](https://github.com/refined-github/refined-github)
 - Install 1Password browser extension
+
+### 14. macOS Defaults
+
+```fish
+fish macos-defaults.fish
+```
+
+Sets up keyboard repeat speed, Finder, Dock, screenshots, trackpad, and more.
 
 ## What's Included
 
