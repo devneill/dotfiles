@@ -61,6 +61,11 @@ echo "  ✅ Screenshots"
 # Don't rearrange spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Disable Quick Note hot corner (bottom right)
+defaults write com.apple.dock wvous-br-corner -int 0
+defaults write com.apple.dock wvous-br-modifier -int 0
+echo "  ✅ Mission Control"
+
 # --- Trackpad ---
 # Tracking speed (0 to 3, default is about 1)
 defaults write NSGlobalDomain com.apple.trackpad.scaling -float 2.5
